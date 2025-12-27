@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Quote - No D Lehs DJ Services</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">No D Lehs DJ Services</a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="quote.html">Get a Quote</a></li>
+                <li><a href="store.html">Store</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero gradient-bg" style="min-height: 40vh;">
+        <div class="hero-content">
+            <h1>Get a Free Quote</h1>
+            <p>Tell us about your event and we'll create a custom quote for you</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div class="card">
+                <form id="quoteForm">
+                    <h3 style="margin-bottom: 2rem;">Contact Information</h3>
+
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" class="form-control" required>
+                    </div>
+
+                    <h3 style="margin: 2rem 0 1.5rem;">Event Details</h3>
+
+                    <div class="form-group">
+                        <label for="eventType">Event Type *</label>
+                        <select id="eventType" class="form-control" required>
+                            <option value="">Select event type</option>
+                            <option value="wedding">Wedding</option>
+                            <option value="corporate">Corporate Event</option>
+                            <option value="private">Private Party</option>
+                            <option value="school">School Event</option>
+                            <option value="club">Club/Bar</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="eventDate">Event Date *</label>
+                        <input type="date" id="eventDate" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="eventLocation">Event Location *</label>
+                        <input type="text" id="eventLocation" class="form-control" placeholder="City, State or Venue Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guestCount">Expected Number of Guests *</label>
+                        <input type="number" id="guestCount" class="form-control" min="1" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="duration">Event Duration (hours) *</label>
+                        <select id="duration" class="form-control" required>
+                            <option value="">Select duration</option>
+                            <option value="4">4 hours</option>
+                            <option value="5">5 hours</option>
+                            <option value="6">6 hours</option>
+                            <option value="7">7 hours</option>
+                            <option value="8">8 hours</option>
+                            <option value="custom">Custom (specify in details)</option>
+                        </select>
+                    </div>
+
+                    <h3 style="margin: 2rem 0 1.5rem;">Package Selection</h3>
+
+                    <div class="form-group">
+                        <label for="package">Preferred Package</label>
+                        <select id="package" class="form-control">
+                            <option value="">Select a package (optional)</option>
+                            <option value="essential">Essential - $500/4 hours</option>
+                            <option value="premium">Premium - $900/6 hours</option>
+                            <option value="ultimate">Ultimate - $1,500/8 hours</option>
+                            <option value="custom">Custom Package</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Additional Services (Check all that apply)</label>
+                        <div style="margin-top: 0.5rem;">
+                            <div style="margin-bottom: 0.5rem;">
+                                <input type="checkbox" id="uplighting" value="uplighting">
+                                <label for="uplighting" style="display: inline; margin-left: 0.5rem; font-weight: normal;">Uplighting (+$200)</label>
+                            </div>
+                            <div style="margin-bottom: 0.5rem;">
+                                <input type="checkbox" id="photobooth" value="photobooth">
+                                <label for="photobooth" style="display: inline; margin-left: 0.5rem; font-weight: normal;">Photo Booth (+$400)</label>
+                            </div>
+                            <div style="margin-bottom: 0.5rem;">
+                                <input type="checkbox" id="projection" value="projection">
+                                <label for="projection" style="display: inline; margin-left: 0.5rem; font-weight: normal;">Projection Screen (+$250)</label>
+                            </div>
+                            <div style="margin-bottom: 0.5rem;">
+                                <input type="checkbox" id="fog" value="fog">
+                                <label for="fog" style="display: inline; margin-left: 0.5rem; font-weight: normal;">Fog Machine (+$100)</label>
+                            </div>
+                            <div style="margin-bottom: 0.5rem;">
+                                <input type="checkbox" id="monogram" value="monogram">
+                                <label for="monogram" style="display: inline; margin-left: 0.5rem; font-weight: normal;">Monogram Lighting (+$150)</label>
+                            </div>
+                            <div style="margin-bottom: 0.5rem;">
+                                <input type="checkbox" id="ceremony" value="ceremony">
+                                <label for="ceremony" style="display: inline; margin-left: 0.5rem; font-weight: normal;">Ceremony Sound (+$200)</label>
+                            </div>
+                            <div style="margin-bottom: 0.5rem;">
+                                <input type="checkbox" id="streaming" value="streaming">
+                                <label for="streaming" style="display: inline; margin-left: 0.5rem; font-weight: normal;">Live Streaming (+$300)</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="details">Additional Details or Special Requests</label>
+                        <textarea id="details" class="form-control" placeholder="Tell us more about your event, music preferences, or any special requirements..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-gradient" style="width: 100%; padding: 1rem;">Submit Quote Request</button>
+                </form>
+
+                <div id="successMessage" class="success-message" style="display: none;">
+                    <h3>Thank You for Your Quote Request!</h3>
+                    <p>We've received your information and will get back to you within 24 hours with a customized quote for your event.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/quote.js"></script>
+</body>
+</html>
