@@ -6,22 +6,18 @@ import Link from 'next/link';
 export default function Home() {
   const features = [
     {
-      icon: '🎵',
       title: 'Professional Sound',
       description: 'Top-quality audio equipment for crystal clear sound',
     },
     {
-      icon: '💡',
       title: 'Amazing Lighting',
       description: 'Dynamic lighting effects to set the perfect mood',
     },
     {
-      icon: '🎉',
       title: 'All Events',
       description: 'Weddings, parties, corporate events, and more',
     },
     {
-      icon: '🎧',
       title: 'Experienced DJ',
       description: 'Years of experience reading crowds and keeping the energy high',
     },
@@ -75,36 +71,6 @@ export default function Home() {
             </div>
           </motion.div>
         </div>
-
-        {/* Animated music notes */}
-        <motion.div
-          className="absolute bottom-20 left-20 text-6xl opacity-20"
-          animate={{
-            y: [0, -30, 0],
-            rotate: [0, 10, 0],
-          }}
-          transition={{
-            duration: 3,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        >
-          🎵
-        </motion.div>
-        <motion.div
-          className="absolute top-40 right-20 text-6xl opacity-20"
-          animate={{
-            y: [0, 30, 0],
-            rotate: [0, -10, 0],
-          }}
-          transition={{
-            duration: 4,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        >
-          🎧
-        </motion.div>
       </section>
 
       {/* Features Section */}
@@ -130,7 +96,6 @@ export default function Home() {
                 whileHover={{ y: -10 }}
                 className="bg-white p-6 rounded-lg shadow-lg text-center"
               >
-                <div className="text-6xl mb-4">{feature.icon}</div>
                 <h3 className="text-xl font-bold mb-2 text-gray-800">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
               </motion.div>

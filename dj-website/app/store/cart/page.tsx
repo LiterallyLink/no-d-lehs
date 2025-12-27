@@ -27,7 +27,7 @@ export default function StorePage() {
       name: 'DJ T-Shirt',
       price: 25,
       description: 'Official No-D-Lehs DJ Services branded t-shirt',
-      image: '👕',
+      image: 'SHIRT',
       category: 'Apparel',
     },
     {
@@ -35,7 +35,7 @@ export default function StorePage() {
       name: 'DJ Hat',
       price: 20,
       description: 'Stylish cap with embroidered logo',
-      image: '🧢',
+      image: 'HAT',
       category: 'Apparel',
     },
     {
@@ -43,7 +43,7 @@ export default function StorePage() {
       name: 'Custom Playlist',
       price: 50,
       description: 'Professionally curated playlist for your event',
-      image: '🎵',
+      image: 'MUSIC',
       category: 'Digital',
     },
     {
@@ -51,7 +51,7 @@ export default function StorePage() {
       name: 'Event Planning Guide',
       price: 15,
       description: 'Comprehensive guide to planning your DJ event',
-      image: '📖',
+      image: 'GUIDE',
       category: 'Digital',
     },
     {
@@ -59,7 +59,7 @@ export default function StorePage() {
       name: 'DJ Sticker Pack',
       price: 10,
       description: 'Set of 10 premium vinyl stickers',
-      image: '✨',
+      image: 'STICKERS',
       category: 'Accessories',
     },
     {
@@ -67,7 +67,7 @@ export default function StorePage() {
       name: 'Gift Certificate',
       price: 100,
       description: 'Gift certificate towards DJ services',
-      image: '🎁',
+      image: 'GIFT',
       category: 'Services',
     },
   ];
@@ -137,7 +137,7 @@ export default function StorePage() {
               onClick={() => setShowCart(!showCart)}
               className="relative bg-white text-purple-600 px-6 py-3 rounded-full font-bold"
             >
-              🛒 Cart ({getCartItemCount()})
+              Cart ({getCartItemCount()})
             </motion.button>
           </div>
         </div>
@@ -158,7 +158,7 @@ export default function StorePage() {
                 className="bg-white rounded-lg shadow-lg overflow-hidden"
               >
                 <div className="bg-gradient-to-r from-purple-500 to-purple-600 text-white p-12 text-center">
-                  <div className="text-8xl">{product.image}</div>
+                  <div className="text-2xl font-bold">{product.image}</div>
                 </div>
 
                 <div className="p-6">
@@ -214,7 +214,6 @@ export default function StorePage() {
 
               {cart.length === 0 ? (
                 <div className="text-center py-12">
-                  <div className="text-6xl mb-4">🛒</div>
                   <p className="text-gray-500">Your cart is empty</p>
                 </div>
               ) : (
@@ -223,7 +222,7 @@ export default function StorePage() {
                     {cart.map((item) => (
                       <div key={item.id} className="flex items-center justify-between border-b pb-4">
                         <div className="flex items-center flex-1">
-                          <div className="text-4xl mr-4">{item.image}</div>
+                          <div className="text-sm font-semibold text-purple-600 mr-4 w-16">{item.image}</div>
                           <div className="flex-1">
                             <h3 className="font-bold text-gray-800">{item.name}</h3>
                             <p className="text-purple-600">${item.price}</p>
@@ -246,9 +245,9 @@ export default function StorePage() {
                           </button>
                           <button
                             onClick={() => removeFromCart(item.id)}
-                            className="text-red-500 hover:text-red-700 ml-2"
+                            className="text-red-500 hover:text-red-700 ml-2 text-sm font-bold"
                           >
-                            🗑️
+                            Remove
                           </button>
                         </div>
                       </div>
