@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store - No D Lehs DJ Services</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">No D Lehs DJ Services</a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="quote.html">Get a Quote</a></li>
+                <li><a href="store.html">Store</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero gradient-bg" style="min-height: 40vh;">
+        <div class="hero-content">
+            <h1>DJ Merchandise Store</h1>
+            <p>Get official No D Lehs DJ Services merchandise and digital products</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="grid grid-3" id="productGrid">
+            <!-- Products will be dynamically loaded here -->
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>Shopping Cart</h2>
+            <button class="cart-close" id="cartClose">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p style="text-align: center; color: var(--gray); padding: 2rem;">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            <button class="btn btn-gradient" style="width: 100%;" onclick="alert('Checkout functionality would be implemented here')">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Cart Button -->
+    <button class="cart-btn" id="cartBtn">
+        Cart <span class="cart-count" id="cartCount">0</span>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
