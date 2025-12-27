@@ -51,7 +51,6 @@ export default function QuotePage() {
           animate={{ opacity: 1, scale: 1 }}
           className="bg-white p-8 rounded-lg shadow-lg max-w-md text-center"
         >
-          <div className="text-6xl mb-4">🎉</div>
           <h2 className="text-3xl font-bold mb-4 text-gray-800">Thank You!</h2>
           <p className="text-gray-600 mb-6">
             Your quote request has been received. We'll get back to you within 24 hours

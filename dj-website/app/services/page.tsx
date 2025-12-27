@@ -16,7 +16,6 @@ export default function ServicesPage() {
         'Lighting Package Available',
         'Unlimited Planning Meetings',
       ],
-      icon: '💒',
     },
     {
       title: 'Corporate Events',
@@ -29,7 +28,6 @@ export default function ServicesPage() {
         'Customizable Music Selection',
         'Punctual & Professional',
       ],
-      icon: '🏢',
     },
     {
       title: 'Private Parties',
@@ -42,7 +40,6 @@ export default function ServicesPage() {
         'Age-Appropriate Content',
         'Karaoke Available',
       ],
-      icon: '🎈',
     },
     {
       title: 'School Events',
@@ -55,7 +52,6 @@ export default function ServicesPage() {
         'Modern Hit Songs',
         'Clean Lyrics Only',
       ],
-      icon: '🎓',
     },
     {
       title: 'Club & Bar Events',
@@ -68,7 +64,6 @@ export default function ServicesPage() {
         'Professional Equipment',
         'Themed Events',
       ],
-      icon: '🍸',
     },
     {
       title: 'Special Events',
@@ -81,7 +76,6 @@ export default function ServicesPage() {
         'Custom Packages',
         'Event Coordination',
       ],
-      icon: '🎪',
     },
   ];
 
@@ -124,7 +118,6 @@ export default function ServicesPage() {
                 className="bg-white rounded-lg shadow-lg overflow-hidden"
               >
                 <div className="gradient-bg text-white p-6 text-center">
-                  <div className="text-6xl mb-3">{service.icon}</div>
                   <h3 className="text-2xl font-bold">{service.title}</h3>
                 </div>
                 <div className="p-6">
